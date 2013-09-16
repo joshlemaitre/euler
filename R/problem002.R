@@ -29,3 +29,14 @@ while (fib(x) < 4000000) {
 }
 
 sum(y[y %% 2 == 0])
+
+
+def fib(n):
+    x1 = 0
+    x2 = 1
+    for i in range(1,n+1):
+            xn = x1 + x2
+            x1 = x2
+            x2 = xn
+    return(xn)
+
